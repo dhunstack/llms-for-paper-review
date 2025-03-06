@@ -76,7 +76,8 @@ def plot_avg_of_dataset(average_data, metrics: list = None):
     ax.set_title('Metrics for Dataset', fontsize=TITLE_FONTSIZE)
 
     # Set y-axis limit to 0-100%
-    ax.set_ylim(0, Y_LIM, 0, 100)
+    # ax.set_ylim(0, Y_LIM, 0, 100)
+    ax.set_ylim(0, Y_LIM)
 
     # Remove background grid lines but keep borders
     sns.despine(left=False, bottom=False)

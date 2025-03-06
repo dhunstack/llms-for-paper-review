@@ -321,7 +321,7 @@ def save_metrics(data, file_path):
 
 def main():
     bigger_parent_folder = "./extracted"
-    extracted_data = load_data(bigger_parent_folder, shuffled=True)
+    extracted_data = load_data(bigger_parent_folder, shuffled=False)
 
     all_metrics = {}
     for paper, data in extracted_data.items():
